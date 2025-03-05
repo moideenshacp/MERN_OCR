@@ -73,7 +73,7 @@ const OcrApp: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-8 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mt-14 mx-auto">
         {/* Header */}
         <Header />
 
