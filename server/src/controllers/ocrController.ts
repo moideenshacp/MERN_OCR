@@ -5,14 +5,12 @@ import ImageModel from "../models/ImageModel";
 export const uploadImage = async (req: Request, res: Response) => {
   try {
     const { imageUrl } = req.body;
-    console.log("imageeeeeeeeeeeeeeeeeeeeeeeeeeee",imageUrl);
-    
+
     if (!imageUrl)
       return res.status(400).json({ message: "No image URL provided." });
 
     const extractedText = await performOCR(imageUrl);
-  console.log("textttttttttttttttttttttttttttttttttttttttttttttttt",extractedText);
-  
+
     const image = await ImageModel.create({
       imageUrl,
       extractedText,
