@@ -104,7 +104,7 @@ const OcrApp: React.FC = () => {
                   <Upload className="w-12 h-12 text-gray-400 mb-3" />
                   <p className="text-gray-500 mb-2">Click to browse an image</p>
                   <p className="text-gray-400 text-sm">
-                    Supports JPG, PNG, PDF
+                    Supports JPG, PNG
                   </p>
                 </>
               )}
